@@ -77,3 +77,6 @@ group :test do
   gem "selenium-webdriver"
   gem "webdrivers"
 end
+gem 'simple_form'
+gem 'simple_form-tailwind'
+gem "font-awesome-rails"
