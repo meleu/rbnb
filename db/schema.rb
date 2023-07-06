@@ -15,9 +15,9 @@ ActiveRecord::Schema[7.0].define(version: 2023_07_06_133135) do
   enable_extension "plpgsql"
 
   create_table "properties", force: :cascade do |t|
-    t.string "title"
+    t.string "title", null: false
     t.text "description"
-    t.integer "price"
+    t.integer "price", default: 0, null: false
     t.bigint "owner_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
