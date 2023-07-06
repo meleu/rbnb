@@ -3,6 +3,9 @@ class PropertiesController < ApplicationController
 
   def index
     @properties = Property.all
+    respond_to do |format|
+      format.html  # Make sure this line is present
+    end
   end
 
   def show; end
