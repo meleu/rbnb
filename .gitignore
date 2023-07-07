@@ -256,3 +256,6 @@ $RECYCLE.BIN/
 
 # End of https://www.toptal.com/developers/gitignore/api/vim,emacs,visualstudiocode,linux,windows,macos,dotenv,ruby
 
+
+/app/assets/builds/*
+!/app/assets/builds/.keep
