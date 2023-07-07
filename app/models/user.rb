@@ -9,8 +9,11 @@ class User < ApplicationRecord
     "#{first_name} #{last_name}"
   end
 
+  # custom methods
+  ######################################################################
+  has_many :properties
+
   # validations
   ######################################################################
-  validates :name, presence: true, uniqueness: true
   validates :email, presence: true, uniqueness: true
 end
