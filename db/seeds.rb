@@ -39,13 +39,33 @@ end
 
 puts "🏠 Creating properties with faker..."
 
-10.times do
+Property.create!(
+  title: Faker::Tea.variety,
+  description: Faker::Restaurant.description,
+  price: Faker::Commerce.price,
+  owner_id: 1
+)
 
+Property.create!(
+  title: Faker::Tea.variety,
+  description: Faker::Restaurant.description,
+  price: Faker::Commerce.price,
+  owner_id: 2
+)
+
+Property.create!(
+  title: Faker::Tea.variety,
+  description: Faker::Restaurant.description,
+  price: Faker::Commerce.price,
+  owner_id: 3
+)
+
+10.times do
   Property.create!(
     title: Faker::Tea.variety,
     description: Faker::Restaurant.description,
     price: Faker::Commerce.price,
-    owner_id: rand(1..10)
+    owner_id: rand(4..13)
   )
 end
 
